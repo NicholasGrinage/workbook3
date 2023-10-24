@@ -2,7 +2,8 @@ function displayMailingLabel(name, address, city, state, zip) {
   console.log("\n", name, "\n", address, "\n", city, "\n", state, "\n", zip);
 }
 
-displayMailingLabel("Nicholas", "500 Grant St", "Pittsburgh", "PA", "15219");
+displayMailingLabel("Nicholas", "500 Grant St", "Pittsburgh,", "PA", "15219");
+displayMailingLabel("Delmar", "501 Grant St", "Pittsburgh,", "PA", "15789");
 
 console.log();
 
@@ -11,6 +12,10 @@ function addNumbers(num1, num2) {
 }
 
 addNumbers(2, 5);
+
+console.log();
+
+addNumbers(3, 6);
 
 console.log();
 
@@ -25,12 +30,10 @@ displayReceipt(250, 200);
 
 console.log();
 
-  
-  displayReceipt(200, 250);
-  
-  console.log();
+displayReceipt(200, 250);
 
-  
-  displayReceipt(200, 200);
-  
-  console.log();
+console.log();
+
+displayReceipt(200, 200);
+
+console.log();
