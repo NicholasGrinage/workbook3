@@ -21,7 +21,7 @@ console.log();
 
 function displayReceipt(totalDue, amountPaid) {
   let changeDue = amountPaid - totalDue;
-  console.log("Total Due: $ " + totalDue);
+  console.log("Total Due: $" + totalDue);
   console.log("Amount Paid: $" + amountPaid);
   console.log("Change Due: $" + changeDue);
 }
