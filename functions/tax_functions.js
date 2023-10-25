@@ -28,3 +28,4 @@ function getFederalTax(preTaxPay, withholdingCode) {
 console.log(`$${getFederalTax(750, 0).toFixed(2)}`);
 console.log(`$${getFederalTax(1550, 2).toFixed(2)}`);
 console.log(`$${getFederalTax(1100, 6).toFixed(2)}`);
+
