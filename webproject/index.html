@@ -47,10 +47,10 @@
           <input type="radio" name="age" id="overRadio" />
           <label for="overRadio">Yes</label>
         </div>
-
+        <br />
         <button id="estimateButton">Estimate Total Cost</button>
-        <br>
-        <br>
+        <br />
+        <br />
         <div class="row">
           <label for="carRentalPrice">Car Rental:</label>
           <p id="carRentalPrice"></p>
@@ -74,10 +74,33 @@
 
       <script>
         //get html elements into variables
+        const pickupText = document.getElementById("pickupText");
+        const daysText = document.getElementById("daysText");
+        const electronicCheckbox = document.getElementById("electronicCheckbox");
+        const gpsCheckbox = document.getElementById("gpsCheckbox");
+        const roadsideCheckbox = document.getElementById("roadsideCheckbox");
+        const underRadio = document.getElementById("underRadio");
+        const overRadio = document.getElementById("overRadio");
+        const estimateButton = document.getElementById("estimateButton");
+        const carRentalPrice = document.getElementById("carRentalPrice");
+        const optionsPrice = document.getElementById("optionsPrice");
+        const ageSurcharge = document.getElementById("ageSurcharge");
+        const totalAmountDue = document.getElementById("totalAmountDue");
 
         //write functions to handle events
-
+        function x() {
+          console.log("Electrionic: " + electronicCheckbox.checked);
+          console.log("GPS: " + gpsCheckbox.checked);
+          console.log("Roadside: " + roadsideCheckbox.checked);
+          console.log("Under: " + underRadio.checked);
+          console.log("Over: " + overRadio.checked);
+          console.log("Car: " + carRentalPrice.checked);
+          console.log("Options: " + optionsPrice.checked);
+          console.log("Age: " + ageSurcharge.checked);
+          console.log("Total: " + totalAmountDue);
+        }
         //wire-up functions to events
+        estimateButton.onclick = estimateTotalCost;
       </script>
     </main>
   </body>
