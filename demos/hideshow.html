@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HideShow</title>
+  </head>
+  <body>
+    <main>
+      <h3 id="titleHeading">Title</h3>
+      <p id="detailsParagraph" style="display: none">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, saepe nisi in commodi ratione molestias
+        error est cumque odit dolore, nobis, voluptates voluptatibus mollitia. Magnam repudiandae sapiente optio animi
+        iusto.
+      </p>
+    </main>
+
+    <script>
+      const titleHeading = document.getElementById("titleHeading");
+      const detailsParagraph = document.getElementById("detailsParagraph");
+
+      function toggleParagraph() {
+        let display = detailsParagraph.style.display;
+        if (display == "none") {
+          detailsParagraph.style.display = "block";
+        } else {
+          detailsParagraph.style.display = "none";
+        }
+      }
+
+      titleHeading.onclick = toggleParagraph;
+    </script>
+  </body>
+</html>

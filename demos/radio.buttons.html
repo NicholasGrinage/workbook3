@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Button</title>
+    <!-- <style>
+        .radio-group{
+            display: flex;
+            flex-direction: column;
+            max-width: 10rem;
+            justify-items: center;
+        }
+        .radio-group label,input[
+            display-inline
+
+        ]
+    </style> -->
+  </head>
+  <body>
+    <main>
+      <fieldset class="radio-group">
+        <input type="radio" name="policyType" id="autoRadio" />
+        <label for="">Auto</label>
+
+        <input type="radio" name="policyType" id="homeRadio" />
+        <label for="">Home</label>
+
+        <input type="radio" name="policyType" id="lifeRadio" />
+        <label for="radio">Life</label>
+        <button id="saveButton">Save</button>
+      </fieldset>
+    </main>
+    <script>
+      const autoRadio = document.getElementById("autoRadio");
+      const homeRadio = document.getElementById("homeRadio");
+      const lifeRadio = document.getElementById("lifeRadio");
+      const saveButton = document.getElementById("saveButton");
+
+      function saveButton() {
+        console.log("Auto: " + autoRadio.checked);
+        console.log("Home: " + homeRadio.checked);
+        console.log("Life: " + lifeRadio.checked);
+      }
+
+      saveButton.onclick = save;
+    </script>
+  </body>
+</html>
