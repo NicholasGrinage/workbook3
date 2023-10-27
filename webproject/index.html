@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <fieldset>
+        <div class="row">
+          <h3>ACME Car Rental</h3>
+        </div>
+
+        <div class="row">
+          <label for="pickupText">Pickup date:</label>
+          <input type="text" id="pickupText" />
+        </div>
+
+        <div class="row">
+          <label for="daysText">Number of days:</label>
+          <input type="text" id="daysText" />
+        </div>
+        <br />
+        <h4>Options</h4>
+        <div class="row">
+          <input type="checkbox" id="electronicCheckbox" />
+          <label for="electronicCheckbox">Electronic Toll Tag ($3.95/day)</label>
+        </div>
+
+        <div class="row">
+          <input type="checkbox" id="gpsCheckbox" />
+          <label for="gpsCheckbox">GPS ($2.95/day)</label>
+        </div>
+
+        <div class="row">
+          <input type="checkbox" id="roadsideCheckbox" />
+          <label for="roadsideCheckbox">Roadside Assistance (2.95/day)</label>
+        </div>
+        <h5>Under 25</h5>
+        <div class="row">
+          <input type="radio" name="age" id="underRadio" />
+          <label for="underRadio">No</label>
+        </div>
+
+        <div class="row">
+          <input type="radio" name="age" id="overRadio" />
+          <label for="overRadio">Yes</label>
+        </div>
+
+        <button id="estimateButton">Estimate Total Cost</button>
+        <br>
+        <br>
+        <div class="row">
+          <label for="carRentalPrice">Car Rental:</label>
+          <p id="carRentalPrice"></p>
+        </div>
+
+        <div class="row">
+          <label for="optionsPrice">Options:</label>
+          <p id="optionsPrice"></p>
+        </div>
+
+        <div class="row">
+          <label for="ageSurcharge">Under 25 surcharge:</label>
+          <p id="ageSurcharge"></p>
+        </div>
+
+        <div class="row">
+          <label for="totalAmountDue">Total Due:</label>
+          <p id="totalAmountDue"></p>
+        </div>
+      </fieldset>
+
+      <script>
+        //get html elements into variables
+
+        //write functions to handle events
+
+        //wire-up functions to events
+      </script>
+    </main>
+  </body>
+</html>
