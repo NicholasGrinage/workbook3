@@ -13,10 +13,10 @@ const overRadio = document.getElementById("overRadio");
 
 const estimateButton = document.getElementById("estimateButton");
 
-const carRentalPrice = document.getElementById("carRentalPrice");
-const optionsPrice = document.getElementById("optionsPrice");
-const ageSurcharge = document.getElementById("ageSurcharge");
-const totalAmountDue = document.getElementById("totalAmountDue");
+const carRentalCostParagraph = document.getElementById("carRentalCostParagraph");
+const optionsCostParagraph = document.getElementById("optionsCostParagraph");
+const under25SurchargeParagraph = document.getElementById("under25SurchargeParagraph");
+const totalDueParagraph = document.getElementById("totalDueParagraph");
 
 //write functions to handle events
 function estimateCost() {
@@ -43,6 +43,10 @@ function estimateCost() {
   totalCost = carRentalCost + optionsCost + under25Cost;
 
   console.log(carRentalCost, optionsCost, under25Cost);
+  carRentalCostParagraph.innerText = carRentalCost;
+  optionsCostParagraph.innerText = optionsCost;
+  under25SurchargeParagraph.innerText = under25Cost;
+  totalDueParagraph.innerText = totalCost;
 }
 
 //wire-up functions to events
