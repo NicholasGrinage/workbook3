@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Website</title>
   </head>
   <body>
     <main>
@@ -13,13 +13,13 @@
         </div>
 
         <div class="row">
-          <label for="pickupText">Pickup date:</label>
-          <input type="text" id="pickupText" />
+          <label for="pickupDate">Pickup date:</label>
+          <input type="date" id="pickupDate" />
         </div>
 
         <div class="row">
-          <label for="daysText">Number of days:</label>
-          <input type="text" id="daysText" />
+          <label for="numberOfDaysInput">Number of days:</label>
+          <input type="text" id="numberOfDaysInput" />
         </div>
         <br />
         <h4>Options</h4>
@@ -41,14 +41,13 @@
         <div class="row">
           <input type="radio" name="age" id="underRadio" />
           <label for="underRadio">No</label>
-        </div>
 
-        <div class="row">
           <input type="radio" name="age" id="overRadio" />
           <label for="overRadio">Yes</label>
+          
         </div>
         <br />
-        <button id="estimateButton">Estimate Total Cost</button>
+        <button id="estimateButton" onclick="estimateCost()">Estimate Total Cost</button>
         <br />
         <br />
         <div class="row">
@@ -72,36 +71,7 @@
         </div>
       </fieldset>
 
-      <script>
-        //get html elements into variables
-        const pickupText = document.getElementById("pickupText");
-        const daysText = document.getElementById("daysText");
-        const electronicCheckbox = document.getElementById("electronicCheckbox");
-        const gpsCheckbox = document.getElementById("gpsCheckbox");
-        const roadsideCheckbox = document.getElementById("roadsideCheckbox");
-        const underRadio = document.getElementById("underRadio");
-        const overRadio = document.getElementById("overRadio");
-        const estimateButton = document.getElementById("estimateButton");
-        const carRentalPrice = document.getElementById("carRentalPrice");
-        const optionsPrice = document.getElementById("optionsPrice");
-        const ageSurcharge = document.getElementById("ageSurcharge");
-        const totalAmountDue = document.getElementById("totalAmountDue");
-
-        //write functions to handle events
-        function x() {
-          console.log("Electrionic: " + electronicCheckbox.checked);
-          console.log("GPS: " + gpsCheckbox.checked);
-          console.log("Roadside: " + roadsideCheckbox.checked);
-          console.log("Under: " + underRadio.checked);
-          console.log("Over: " + overRadio.checked);
-          console.log("Car: " + carRentalPrice.checked);
-          console.log("Options: " + optionsPrice.checked);
-          console.log("Age: " + ageSurcharge.checked);
-          console.log("Total: " + totalAmountDue);
-        }
-        //wire-up functions to events
-        estimateButton.onclick = estimateTotalCost;
-      </script>
+      <script src="scripts/index.js"></script>
     </main>
   </body>
 </html>
